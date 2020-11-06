@@ -1,0 +1,42 @@
+.modal-about{
+    position: relative;
+    width: 100%;
+    height: 630px;
+    background-color: rgba(68, 65, 64, 0.356);
+    display: none;
+}
+.about-wrapper{
+    width: 50%;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(250, 250, 250);
+    position: absolute;
+    display: flex;
+}
+.about-wrapper header{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 40px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.closeabout{
+    float: right;
+    padding: 0 10px;
+}
+.imeg{
+    padding: 12px;
+}
+.details{
+    padding: 50px 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.details h2{
+    text-align: center;
+}
+.about-wrapper > div{
+    flex: 1;
+}

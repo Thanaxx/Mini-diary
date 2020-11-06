@@ -1,0 +1,268 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #dbdada;
+    color: #000000;
+    transition: background 0.2s linear;
+}
+
+/*dark theme*/
+body.dark{
+    background-color: #2a3232;
+}
+body.dark .left-container h1{
+    color: rgba(185, 182, 182, 0.829);
+}
+body.dark .text{
+    background-color: #2a3232;
+    box-shadow:  5px 5px 12px #161b1b, 
+             -5px -5px 12px #3e4a4a;
+    color: rgb(206, 206, 206);
+}
+body.dark .element{
+    box-shadow:  5px 5px 12px #161b1b, 
+             -5px -5px 12px #3e4a4a;
+    color: rgb(206, 206, 206);
+}
+body.dark #search{
+    box-shadow:  5px 5px 12px #161b1b, 
+             -5px -5px 12px #3e4a4a;
+    font-weight: lighter;
+}
+body.dark .time{
+    color: rgb(133, 133, 133);
+}
+body.dark .del{
+    color: rgb(133, 133, 133);
+    background-color: #2a3232;
+    box-shadow:  5px 5px 20px #161b1b, 
+                -5px -5px 20px #3e4a4a;
+}
+body.dark .check{
+    color: rgb(133, 133, 133);
+    background-color: #2a3232;
+    box-shadow:  5px 5px 20px #161b1b, 
+                -5px -5px 20px #3e4a4a;
+}
+body.dark .marks{
+    color: rgb(133, 133, 133);
+    background-color: #2a3232;
+    box-shadow:  5px 5px 20px #161b1b, 
+                -5px -5px 20px #3e4a4a;
+}
+body.dark .favorite{
+    color: rgb(133, 133, 133);
+    background-color: #2a3232;
+    box-shadow:  5px 5px 20px #161b1b, 
+                -5px -5px 20px #3e4a4a;
+}
+body.dark .add{
+    background-color: #2a3232;
+    box-shadow:  5px 5px 12px #161b1b, 
+             -5px -5px 12px #3e4a4a;
+    color: rgb(206, 206, 206);
+}
+body.dark .head{
+    background-color: #2a3232;
+}
+body.dark .opensb{
+    color: rgba(206, 206, 206, 0.808);
+}
+
+
+/*navigation part- upper part (switch btn & search btn location)*/
+.head{
+    width: 100%;
+    min-height: 40px;
+    padding: 12px 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff00;
+}
+
+/*search input to be position at the right part of the page*/
+#search{
+    width: 20%;
+    float: right;
+    font-size: 18px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    color: rgb(58, 58, 58);
+    box-shadow:
+    -3px -3px 3px 0px rgb(255, 255, 255, 0.425),
+    4px 3px 3px 0px rgb(88, 88, 88, 0.425);
+}
+
+/*main page*/
+.page-container{
+    min-height: 600px;
+    width: 100%;
+    margin-top: 40px;
+    position: absolute;
+}
+/*creating 2 sides using flex*/
+.left-container{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 500px;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    
+}
+.right-container{ /*scrollable page*/
+    width: 50%;
+    min-height: 600px;
+    float: right;
+    padding: 70px 90px 0px 0px;
+    color: rgb(54, 53, 53);
+    font-family: -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*left design*/
+.left-container h1{
+    font-size: 4vw;
+    font-family: Arial;
+    color: #4d4d4dc9;
+    text-shadow: 2px 2px 4px #5858586c;
+    
+}
+.left-container > button{
+    font-size: 1.5vw;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin: 1rem;
+    padding: 3px 9px;
+    color: #3a3a3a;
+    background-color: #dbdada;
+    margin-top: 5px;
+    border: none;
+}
+
+/*textfield area*/
+.text{
+    width: 100%;
+    min-height: 300px;
+    margin: 20px;
+    background-color: #dbdada;
+    color: rgb(1, 49, 11);
+    font-size: 1.5vw;
+    border: none;
+    outline: none;
+    padding: 10px;
+    box-shadow:
+    -5px -4px 3px 0px #ffffff6c,
+    5px 4px 3px 0px #5858586c;
+    border-radius: 4%;
+}
+.text::placeholder{
+    color: #52525291;
+}
+.add{
+    box-shadow:
+    -5px -4px 3px 0px #ffffff6c,
+    5px 4px 3px 0px #5858586c;
+}
+.add:hover{
+    background-color: #818181;
+    color: white;
+}
+
+/*right container data enters*/
+.element{
+    box-shadow:
+    -5px -4px 3px 0px #ffffff6c,
+    5px 4px 3px 0px #5858586c;
+    align-items: center;
+    font-size: 1.4vw;
+    transition: all 0.5s ease;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 100%;
+    margin: 35px 35px;
+}
+.element li{
+    list-style: none;
+    padding: 5px;
+    flex: 1;
+}
+.del, .check, .marks, .favorite{
+    background-color: rgb(216, 216, 216);
+    padding: 7px;
+    border: none;
+    outline: none;
+    margin:5px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1vw;
+    box-shadow: -5px -4px 10px 0px rgb(255, 255, 255, 0.425),
+                5px 4px 10px 0px rgb(88, 88, 88, 0.425);
+    color: rgba(68, 68, 68, 0.664);
+    float: right;
+}
+
+.del:hover{
+        background-color: #818181;
+        color: white;
+}
+.check:hover{
+    background-color: #818181;
+    color: white;
+}
+.marks:hover{
+    background-color: #818181;
+    color: white;
+}
+.favorite:hover{
+    background-color: #818181;
+    color: white;
+}
+
+.fa-trash, .fa-check, .fa-strikethrough, .fa-star{
+    pointer-events: none;
+}
+
+/*Animation of the remove button before it disappear*/
+.falls{
+    transform: translate(40rem) rotateZ(0deg);
+    opacity: 0 ;
+}
+
+/*time*/
+.time{
+    background-color: rgba(255, 255, 255, 0);
+    color: #302f2fab;
+    font-size: 0.9vw;
+    padding: 0 10px;
+}
+
+/*add opacity to the note*/
+.hide{
+    opacity: 0.2;
+}
+
+/*mark the note*/
+.marking{
+    text-decoration-line: line-through;
+}
+.favy{
+    background-color: rgba(85, 141, 90, 0.459);
+}
+
+.fa-plus{
+    pointer-events: none;
+}
+
+
+

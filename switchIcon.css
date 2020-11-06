@@ -1,0 +1,37 @@
+/*styling icon for theme animation*/
+#color{
+    color: rgb(24, 23, 23);
+}
+input[type="checkbox"]{
+    width: 40px;
+    height: 25px;
+    -webkit-appearance: none;
+    background: rgba(54, 54, 54, 0.712);
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow:
+    -3px -3px 3px 0px rgb(255, 255, 255, 0.425),
+    4px 3px 3px 0px rgb(88, 88, 88, 0.425);
+    margin-left: 60px;
+}
+input:checked[type="checkbox"]{
+    background-color: rgb(207, 207, 206);   
+}
+input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+    background-color: rgb(206, 201, 201);
+    /*transform: scale(1.1);*/
+    box-shadow: 0 2px 5px rgb(141, 141, 141);
+    transition: .5s;
+}
+input:checked[type="checkbox"]::before{
+    left: 75px;
+
+}
+

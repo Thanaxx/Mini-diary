@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="frontstyle.css">
+    <link rel="stylesheet" type="text/css" href="./switchIcon.css">
+    <link rel="stylesheet" type="text/css" href="./sidebar.css">
+    <link rel="stylesheet" type="text/css" href="./contacts.css">
+    <link rel="stylesheet" type="text/css" href="./about.css">
+    <link rel="stylesheet" type="text/css" href="./soon.css">
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <link rel="stylesheet" href="./cssFontawesome/all.min.css">
+    
+    <title>note.com.ph</title>
+</head>
+<body>
+    
+    <div class="mainpage">
+        <nav class="side-push" id="op">
+            <a href="javascript:void(0)" class="closeBtn" id="cls" onclick="klose()">&times;</a>
+
+            <a href="#"><option value="all">All notes</option></a>
+            <a href="#"><option value="fav                     ">Favorites</option></a>
+            <a href="#"><option value="hide">Hide</option></a>
+            <a href="#"><option value="mark">Marked</option></a>
+            <br><hr><br>
+            <div class="theme">
+                <a href="#" onclick="droptheme()">Theme   <i class="fa fa-caret-down"></i></a>
+                <div class="change" id="drop">
+                    <input id="color" class="col" type="checkbox" name="bg" onclick="change()">
+                </div>
+            </div>
+
+            <a href="#" class="messageme">Contacts</a>
+            <a href="#" class="aboutme">About</a>
+            <a href="#" class="more">More</a>
+        </nav>
+    </div>
+
+        <div class="secpage" id ="all">
+            <div class="head" id="hd">
+                <button class="opensb" onclick="openm()"><i class="fa fa-2x fa-bars"></i></button>
+                <input id="search" type="search" placeholder="search">
+            </div>
+             
+            
+            <!--main body of the page-->
+            <div class="page-container" id="spage">
+                <div class="left-container">
+                    <h1>leave a note <i class="fa fa-leaf"></i></h1>
+                    <textarea class="text" placeholder="type text here" required></textarea>
+                    <br>
+                    <button class="add" onclick="addFunction()"><span>add</span><i class="fa fa-plus"></i></button>
+                </div>
+
+                <div class="right-container">
+                    <ul class="rc"></ul>
+                </div>
+            </div>
+            
+            
+            <!--CREATE MODAL BOX FOR CONTACTS-->
+                <div class="modal-contacts"> <!--The body-->
+                    <div class="contacts-con">
+                        <header>
+                                <p class="closeme" onclick="conclose()" id="closemodal">&times;</p>
+                        </header>
+                        <form>
+                            <input type="text" placeholder="name">
+                            <input type="email" placeholder="email address">
+                            <textarea id="message" cols="30" rows="8" placeholder="type your message here.."></textarea>
+                        </form>
+                            <button id="submitmodal" type="submit">Submit</button>
+                    </div>
+                </div>
+
+            <!--CREATE MODAL FOR ABOUT-->
+                <div class="modal-about">
+                    <div class="about-wrapper">
+                        <header>
+                            <p class="closeabout" id="closebout">&times;</p>
+                        </header>
+                        <div class="imeg">
+                            <img src="images/logonote.jpg" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="details">
+                            <h2>About the page</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Mollitia nulla sequi, ab
+                                facilis voluptatum adipisci quasi porro
+                                laborum minima? Doloribus molestiae explicabo
+                                ex earum dolore, fugiat rem debitis alias, hic
+                                voluptates iure, atque exercitationem? Ea ad
+                                sapiente eligendi, aperiam fugit quo dolore.
+                                Mollitia, beatae
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!--CREATE MODAL BOX FOR more-->
+            <div class="modal-soon"> <!--The body-->
+                <div class="soon-wrap">
+                    <header>
+                        <p class="closesoon">&times;</p>
+                    </header>
+                    <div class="mege">
+                        <img src="images/comingsoon.jpg" alt="" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+<script src="./pages.js"></script>
+</html>

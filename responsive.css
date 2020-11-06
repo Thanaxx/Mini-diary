@@ -1,0 +1,89 @@
+@media screen and (max-width:700px){
+    .side-push a{
+        font-size: 20px;
+    }
+    .side-push{
+        background-color: rgb(17, 85, 90);
+    }
+    #search{
+        width: 40%;
+        font-size: 18px;
+    }
+    .page-container > div{
+        flex-direction: column;
+    }
+    .left-container h1{
+        font-size: 27px;
+        text-align: center;
+    }
+    .text{
+        font-size: 15px;
+    }
+    .notes{
+        font-size: 15px;
+    }
+    .fa-plus{
+        font-size: 15px;
+    }
+    .add span{
+        font-size: 18px;
+    }
+    /*contacts*/
+    .contacts-con{
+        width:100%;
+    }
+    input[type="text"], input[type="email"]{
+        font-size: 15px;
+    }
+    #message{
+        font-size: 15px;
+    }
+    #submitmodal{
+        font-size: 15px;
+    }
+    #closemodal{
+        padding: 1px;
+        font-size: 35px;
+    }
+    /*about*/
+    .about-wrapper{
+        width: 100%;
+    }
+    .details h2{
+        font-size: 20px;
+    }
+    .details p{
+        font-size: 12px;
+    }
+    .details{
+        padding: 10px 12px;
+    }
+    .about-wrapper{
+        flex-direction: column;
+    }
+    .imeg{
+        padding: 5px 12px;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    #search{
+        width: 40%;
+        font-size: 18px;
+    }
+    .fa-plus{
+        font-size: 15px;
+    }
+    .add span{
+        font-size: 18px;
+    }
+    .contacts-con{
+        width: 65%;
+    }
+    .about-wrapper{
+        width: 60%;
+    }
+
+
+}

@@ -1,0 +1,42 @@
+.opensb{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    color: rgba(85, 85, 85, 0.74);
+    cursor: pointer;
+}
+.side-push{
+    width: 0;
+    height: 100%;
+    z-index: 1; /*know its uses*/
+    background-color: rgb(114, 114, 114);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    overflow-x:hidden;
+    transition: all 0.5s ease;
+    padding-top: 50px;
+}
+.side-push a{
+    padding: 7px 5px 7px 5px;
+    display: block;
+    color: #ffffff;
+    text-decoration-line: none;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    padding-left: 20px;
+}
+.side-push a:hover{
+    background-color: rgb(80, 78, 78);
+}
+/*close button*/
+#cls{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#cls:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
